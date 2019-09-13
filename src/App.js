@@ -39,6 +39,7 @@ const getRecipes = async () => {
         Search
       </button>
     </form>
+    <div className="recipes">
     {recipes.map(recipe => (
       <Recipe 
       key={recipe.recipe.label}
@@ -48,6 +49,7 @@ const getRecipes = async () => {
       ingredients={recipe.recipe.ingredients}
       />
     ))}
+    </div>
     </div>
   );
 }
